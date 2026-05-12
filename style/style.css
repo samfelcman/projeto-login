@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* Paleta de Cores */
+:root {
+    --cor-principal: #007bff;
+    --cor-secundaria: #6c757d;
+    --cor-sucesso: #28a745;
+    --cor-alerta: #ffc107;
+    --cor-perigo: #dc3545;
+    --cor-fundo: #f8f9fa;
+    --cor-texto: #343a40;
+}
+

@@ -14,10 +14,21 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <form>
-                    <input type="text" placeholder="Usuário">
-                    <input type="password" placeholder="Senha">
-                    <button type="submit">Entrar</button>
+                <p>Por favor, faça login para continuar.</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" placeholder="Seu usuário" required>
+                    </div>
+                    <div class="campo">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                    </div>
+                    <div class="campo">
+                        <button type="submit">Entrar</button>
+                    </div>
+
+                    </div>
                 </form>
             </div>
         </section>

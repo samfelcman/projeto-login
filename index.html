@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <title>Projeto Login</title>
 </head>
 <body>
@@ -15,17 +16,21 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Por favor, faça login para continuar.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <label for="username">Usuário:</label>
-                        <input type="text" id="username" name="username" placeholder="Seu usuário" required>
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" id="username" name="username" placeholder="Seu usuario" autocomplete="email" required maxlength="30">
+                        <label for="username">Login:</label>
                     </div>
                     <div class="campo">
+                        <span class="material-symbols-outlined">password</span>
+                        <input type="password" id="password" name="password" placeholder="Sua senha" autocomplete="current-password" required mminlength="8" maxlength="20">
                         <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" placeholder="Sua senha" required>
                     </div>
                     <div class="campo">
                         <button type="submit">Entrar</button>
+                        <button type="forgot-password">Esqueci minha senha</button>
+
                     </div>
 
                     </div>

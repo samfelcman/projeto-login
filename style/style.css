@@ -2,11 +2,11 @@
 
 /* Paleta de Cores */
 :root {
-    --cor-principal: #007bff;
+    --cor-principal: #ffffffe6;
     --cor-secundaria: #6c757d;
-    --cor-sucesso: #a3c5ab;
-    --cor-alerta: #5f8f87;
-    --cor-perigo: #dc3545;
+    --cor-entrar: #a3c5ab;
+    --cor-enviar: #5f8f87;
+    --cor-cadastro: #73c09c;
     --cor-fundo: #ebe8d9;
     --cor-texto: #343a40;
 }
@@ -38,7 +38,7 @@ section#login {
     overflow: hidden;
 
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffffe6;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.651);
     width: 250px;
@@ -61,13 +61,36 @@ section#login > div#formulario {
     display: block;
 }
 
+div#formulario > h1 {
+    text-align: center;
+    color: var(--cor-texto);
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form > div.campo {
+    background-color: var(--cor-cadastro);
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 0px;
+
+}
+
 div > button[type=submit] {
     margin-top: 4px;
     display: block;
     font-size: 1em;
     width: 100%;
     height: 30px;
-    background-color: var(--cor-sucesso);
+    background-color: var(--cor-entrar);
     color: rgb(0, 0, 0);
     border-radius: 4px;
     cursor: pointer;
@@ -75,13 +98,13 @@ div > button[type=submit] {
 }
 
 div > button[type=submit]:hover {
-    background-color: var(--cor-sucesso);
+    background-color: var(--cor-entrar);
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
 div > button[type=submit]:active {
-    background-color: var(--cor-sucesso);
+    background-color: var(--cor-entrar);
     opacity: 0.6;
     transition: opacity 0.1s ease;
 }
@@ -91,7 +114,7 @@ div > button[type=forgot-password] {
     font-size: 1em;
     width: 100%;
     height: 30px;
-    background-color: var(--cor-alerta);
+    background-color: var(--cor-enviar);
     color: rgb(0, 0, 0);
     border-radius: 4px;
     cursor: pointer;
@@ -100,7 +123,7 @@ div > button[type=forgot-password] {
 }
 
 div > button[type=forgot-password]:hover {
-    background-color: var(--cor-alerta);
+    background-color: var(--cor-enviar);
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }

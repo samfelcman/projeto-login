@@ -8,7 +8,7 @@
     --cor-enviar: #5f8f87;
     --cor-cadastro: #73c09c;
     --cor-fundo: #ebe8d9;
-    --cor-texto: #343a40;
+    --cor-texto: #000000a8;
 }
 
 * {
@@ -82,6 +82,25 @@ form > div.campo {
     border-radius: 5px;
     margin: 5px 0px;
 
+}
+
+div.campo > span {
+    color: var(--cor-texto);
+    font-size: 1.7rem;
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 30px;
+    display: inline-block;
+}
+
+div.campo > input {
+    background-color: transparent;
+    border: none;
+    width: calc(100% - 40px);
+    height: 100%;
+    font-size: 1em;
+    color: var(--cor-texto);
+    padding-left: 5px;
 }
 
 div > button[type=submit] {

@@ -18,6 +18,7 @@ Grandes telas (TVs): 1201px a 1600px
 
     section#login {
         width: 90vw;
+        height: 295px;
     }
 
     section#login > div#imagem {
@@ -44,6 +45,7 @@ Grandes telas (TVs): 1201px a 1600px
     section#login > div#imagem {
         height: 200px;
     }
+
 
     section#login > div#formulario {
         padding: 15px;
